@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SimcorpMobilePhone.Model {
     public class FakeOutput : IOutput {
         public void DataOutput(string text) {
-            return text 
+            //return text 
         }
     }
 }
