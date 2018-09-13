@@ -6,13 +6,18 @@ using System.Collections.Generic;
 namespace SimcorpMobilePhone {
     class Start {
 
+        //private static Dictionary<int, ISpeaker> availableSpeakers = new Dictionary<int, ISpeaker>();
+        //available(new SamsungHeadset(Output, "SamsungA", true));
+
         static void Main(string[] args) {
 
             Menu.ShowHeadsetMenu();
             string speaker = Console.ReadLine();
             ISpeaker Speaker = null;
             VoiceOutput VoiceOutput = new VoiceOutput();
+
             
+
             if (speaker == "1") {
                 Speaker = new IphoneHeadset (VoiceOutput, "IphoneX", true);
             } else if (speaker == "2") {

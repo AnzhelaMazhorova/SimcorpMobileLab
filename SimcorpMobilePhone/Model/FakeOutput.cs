@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace SimcorpMobilePhone.Model {
     public class FakeOutput : IOutput {
+
+        public string DataOutputTest;
+
         public void DataOutput(string text) {
-            ///////////////return text 
+            this.DataOutputTest = text;
         }
     }
 }

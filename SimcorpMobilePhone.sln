@@ -11,6 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneApplication", "PhoneAp
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePhoneTest", "MobilePhoneTest\MobilePhoneTest.csproj", "{72591A1B-9A0C-4D21-B960-E3D36C8F1F25}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E0B0A18F-B888-4575-9867-878D4F035009} = {E0B0A18F-B888-4575-9867-878D4F035009}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimcorpMobileComponents", "SimcorpMobileComponents\SimcorpMobileComponents.csproj", "{69A01672-832C-4BDA-84BB-88A84CF8839B}"
 EndProject
