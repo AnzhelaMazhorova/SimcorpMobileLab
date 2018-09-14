@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using SimcorpMobilePhone.Model;
 
@@ -17,10 +18,10 @@ namespace PhoneApplication {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            
-            //1st group of radio-buttons (Speaker settings)
-            ISpeaker Speaker = null;
+
+            //1st group of radio-buttons (Speaker settings):
             VoiceOutput VoiceOutput = new VoiceOutput();
+            ISpeaker Speaker = null;
 
             if (IPhoneHeadset.Checked) {
                 Speaker = new IphoneHeadset(VoiceOutput, "IphoneX", true);

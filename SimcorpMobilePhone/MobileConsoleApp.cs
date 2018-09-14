@@ -6,41 +6,62 @@ using System.Collections.Generic;
 namespace SimcorpMobilePhone {
     class MobileConsoleApp {
 
-        static void Main(string[] args) {
+        public static void Main(string[] args) {
 
-            Menu.ShowHeadsetMenu();
-            string speaker = Console.ReadLine();
-            ISpeaker Speaker = null;
+            //Select Speaker type:
             VoiceOutput VoiceOutput = new VoiceOutput();
+            Dictionary<int, ISpeaker> availableSpeakers = new Dictionary<int, ISpeaker>();
+            availableSpeakers.Add(1, new IphoneHeadset(VoiceOutput, "IphoneX", true));
+            availableSpeakers.Add(2, new SamsungHeadset(VoiceOutput, "SamsungA", true));
+            availableSpeakers.Add(3, new PhoneSpeaker(VoiceOutput, "model-ABC"));
 
-            
+            ISpeaker Speaker = null;
 
-            if (speaker == "1") {
-                Speaker = new IphoneHeadset (VoiceOutput, "IphoneX", true);
-            } else if (speaker == "2") {
-                Speaker = new SamsungHeadset(VoiceOutput, "SamsungA", true);
-            } else if (speaker == "3") {
-                Speaker = new PhoneSpeaker(VoiceOutput, "model-ABC");
-            } else { VoiceOutput.DataOutput("There is no such option"); Console.ReadLine(); }
+            while (Speaker == null) {
+                Menu.ShowHeadsetMenu();
 
-            VoiceOutput.DataOutput("Speaker selected");
-            Speaker.Play(null);
+                string speakerSelected = Console.ReadLine();
 
-            Menu.ShowScreenMenu();
-            string menu = Console.ReadLine();
-            ScreenBase Screen = null;
+                foreach (var item in availableSpeakers) {
+                    if (speakerSelected.Equals(item.Key.ToString())) {
+                        Speaker = availableSpeakers[item.Key];
+                        VoiceOutput.DataOutput("Speaker selected");
+                        Speaker.Play(null);
+                    };
+                }
+                if (Speaker == null) {
+                    VoiceOutput.DataOutput("There is no such option. Please try again");
+                }
+            }
+
+            //Select the Screen type:
             TextOutput TextOutput = new TextOutput();
+            Dictionary<int, ScreenBase> availableScreens = new Dictionary<int, ScreenBase>();
+            availableScreens.Add(1, new MonochromeScreen(TextOutput, 300,5));
+            availableScreens.Add(2, new ColorfulScreen(TextOutput, 300, 5, false));
 
-            if (menu == "1") {
-                Screen = new MonochromeScreen(TextOutput, 2.0, 200);
-            } else if (menu == "2") {
-                Screen = new ColorfulScreen(TextOutput,7.0, 500, true);
-            } else { TextOutput.DataOutput("There is no such option"); Console.ReadLine(); }
+            ScreenBase Screen = null;
 
-            TextOutput.DataOutput("Set screen to Mobile... Selected screen is ");
-            Screen.DisplayInfo();
-            Console.ReadLine();            
+            while (Screen == null) {
+                Menu.ShowScreenMenu();
 
+                string screenSelected = Console.ReadLine();
+
+                foreach (var item in availableScreens) {
+                    if (screenSelected.Equals(item.Key.ToString())) {
+                        Screen = availableScreens[item.Key];
+                        TextOutput.DataOutput("Set screen to Mobile... Selected screen is ");
+                        Screen.DisplayInfo();            
+                    }
+                }
+                if (Screen == null) {
+                    TextOutput.DataOutput("There is no such option. Please try again");
+                }
+            }
+
+            Console.ReadLine();
+
+            //From Lab#1:
             //ScreenBase Screen = new ColorfulScreen(7.0, 500, true);
             //IBattery Battery = new Battery(2000, "Li-ion");
             //Keyboard Keyboard = new SensorKeyboard("Russian", "Samsung");

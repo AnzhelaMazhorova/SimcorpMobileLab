@@ -2,11 +2,11 @@
 
 namespace SimcorpMobilePhone.Model {
     public class IphoneHeadset : ISpeaker {
-        public VoiceOutput Output { get; set; }
+        public IOutput Output { get; set; }
         public string SpeakerModel { get; set; }
         private readonly string Manufacturer;
 
-        public IphoneHeadset(VoiceOutput output, string speakerModel, Boolean isWireless) {
+        public IphoneHeadset(IOutput output, string speakerModel, Boolean isWireless) {
             Output = output;
             SpeakerModel = speakerModel;
             Manufacturer = "Iphone";

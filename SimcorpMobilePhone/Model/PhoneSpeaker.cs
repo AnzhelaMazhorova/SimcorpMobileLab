@@ -2,10 +2,10 @@
 
 namespace SimcorpMobilePhone.Model {
     public class PhoneSpeaker : ISpeaker {
-        public VoiceOutput Output { get; set; }
+        public IOutput Output { get; set; }
         public string SpeakerModel { get; set; }
 
-        public PhoneSpeaker(VoiceOutput output, string speakerModel) {
+        public PhoneSpeaker(IOutput output, string speakerModel) {
             this.Output = output;
             this.SpeakerModel = speakerModel;
         }
