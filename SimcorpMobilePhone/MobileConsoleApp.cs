@@ -4,10 +4,7 @@ using SimcorpMobilePhone.View;
 using System.Collections.Generic;
 
 namespace SimcorpMobilePhone {
-    class Start {
-
-        //private static Dictionary<int, ISpeaker> availableSpeakers = new Dictionary<int, ISpeaker>();
-        //available(new SamsungHeadset(Output, "SamsungA", true));
+    class MobileConsoleApp {
 
         static void Main(string[] args) {
 

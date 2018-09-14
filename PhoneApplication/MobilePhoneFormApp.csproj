@@ -106,9 +106,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SimcorpMobilePhone\SimcorpMobilePhone.csproj">
+    <ProjectReference Include="..\SimcorpMobilePhone\MobilePhoneConsoleApp.csproj">
       <Project>{e0b0a18f-b888-4575-9867-878d4f035009}</Project>
-      <Name>SimcorpMobilePhone</Name>
+      <Name>MobilePhoneConsoleApp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

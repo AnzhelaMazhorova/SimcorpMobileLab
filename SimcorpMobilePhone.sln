@@ -3,15 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimcorpMobilePhone", "SimcorpMobilePhone\SimcorpMobilePhone.csproj", "{E0B0A18F-B888-4575-9867-878D4F035009}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePhoneConsoleApp", "SimcorpMobilePhone\MobilePhoneConsoleApp.csproj", "{E0B0A18F-B888-4575-9867-878D4F035009}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneApplication", "PhoneApplication\PhoneApplication.csproj", "{E2AC086D-8EF5-40B3-B13E-6345454951C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePhoneFormApp", "PhoneApplication\MobilePhoneFormApp.csproj", "{E2AC086D-8EF5-40B3-B13E-6345454951C7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E0B0A18F-B888-4575-9867-878D4F035009} = {E0B0A18F-B888-4575-9867-878D4F035009}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePhoneTest", "MobilePhoneTest\MobilePhoneTest.csproj", "{72591A1B-9A0C-4D21-B960-E3D36C8F1F25}"
 	ProjectSection(ProjectDependencies) = postProject
+		{E2AC086D-8EF5-40B3-B13E-6345454951C7} = {E2AC086D-8EF5-40B3-B13E-6345454951C7}
 		{E0B0A18F-B888-4575-9867-878D4F035009} = {E0B0A18F-B888-4575-9867-878D4F035009}
 	EndProjectSection
 EndProject

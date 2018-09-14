@@ -71,7 +71,7 @@
     <Compile Include="Model\TextOutput .cs" />
     <Compile Include="Model\VoiceOutput.cs" />
     <Compile Include="Model\IOutput.cs" />
-    <Compile Include="Start.cs" />
+    <Compile Include="MobileConsoleApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Menu.cs" />
   </ItemGroup>

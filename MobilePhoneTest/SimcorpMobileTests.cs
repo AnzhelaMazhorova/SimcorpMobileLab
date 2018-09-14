@@ -8,9 +8,9 @@ namespace MobilePhoneTest {
         [TestMethod]
 
         //arrange
-        VoiceOutput VoiceOutput = new VoiceOutput();
-        public void VoiceOutput.Data() {
-
+        
+        public void IOutput.DataOutput () {
+            FakeOutput VoiceOutput = new FakeOutput();
         }
 
         //act
