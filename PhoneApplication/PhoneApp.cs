@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 using SimcorpMobilePhone.Model;
 
@@ -37,24 +36,24 @@ namespace PhoneApplication {
                 Speaker.Play(null);
             } else {
                 VoiceOutput.DataOutput("Speaker is not selected");
-            } 
-            
+            }
+
             //2nd group of radio-buttons (Screen settings)
-            ScreenBase Screen = null;
             TextOutput TextOutput = new TextOutput();
-            string ScreenType = null;
+            ScreenBase Screen = null;    
+            string screenType = null;
 
             if (MonochromeScreen.Checked) {
                 Screen = new MonochromeScreen(TextOutput, 2.0, 200);
-                ScreenType = nameof(MonochromeScreen);
+                screenType = nameof(MonochromeScreen);
             } else if (ColorfulScreen.Checked) {
                 Screen = new ColorfulScreen(TextOutput, 7.0, 500, true);
-                ScreenType = nameof(ColorfulScreen);
+                screenType = nameof(ColorfulScreen);
             }
 
             //there is an option not to select radio button without assertion error
             if (Screen != null) {
-                textBox1.Text = "Set screen to Mobile... \n Selected screen is " + ScreenType;
+                textBox1.Text = "Set screen to Mobile... \n Selected screen is " + screenType;
             } else {
                 textBox1.Text = "Screen is not selected";
             }

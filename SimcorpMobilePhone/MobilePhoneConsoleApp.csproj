@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\ColorfulScreen.cs" />
-    <Compile Include="Model\FakeOutput.cs" />
+    <Compile Include="Model\TestOutput.cs" />
     <Compile Include="Model\IphoneHeadset.cs" />
     <Compile Include="Model\ISpeaker.cs" />
     <Compile Include="Model\Mobile.cs" />
@@ -94,9 +94,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SimcorpMobileComponents\SimcorpMobileComponents.csproj">
+    <ProjectReference Include="..\SimcorpMobileComponents\MobilePhoneComponents.csproj">
       <Project>{69a01672-832c-4bda-84bb-88a84cf8839b}</Project>
-      <Name>SimcorpMobileComponents</Name>
+      <Name>MobilePhoneComponents</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
