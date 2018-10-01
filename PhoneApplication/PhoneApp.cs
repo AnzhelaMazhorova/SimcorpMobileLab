@@ -62,7 +62,7 @@ namespace PhoneApplication {
 
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e) {
 
-        }
+        } 
 
         private void PhoneApp_Load(object sender, EventArgs e) {
 

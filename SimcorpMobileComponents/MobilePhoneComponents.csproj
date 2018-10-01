@@ -50,6 +50,7 @@
     <Compile Include="SensorKeyboard.cs" />
     <Compile Include="SimCard.cs" />
     <Compile Include="SimCardType.cs" />
+    <Compile Include="SMSProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

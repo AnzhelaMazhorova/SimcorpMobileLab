@@ -1,4 +1,6 @@
-﻿namespace SimcorpMobilePhone.Model {
+﻿using SimcorpMobileComponents;
+
+namespace SimcorpMobilePhone.Model {
     public abstract class Mobile {
         public ScreenBase Screen { get; set; }
         public IBattery Battery { get; set; }
@@ -6,6 +8,7 @@
         public Microphone Microphone { get; set; }
         public ISpeaker Speaker { get; set; }
         public SimCard SimCard { get; set; }
+        public SMSProvider SMSProvider { get; set; }
 
         public abstract string GetDescription();
         public abstract void AddContact();
