@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1 {
+namespace SMSReceiver {
     static class Program {
         /// <summary>
         /// Главная точка входа для приложения.
@@ -13,7 +13,7 @@ namespace WindowsFormsApp1 {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SMSReceiverForm());
+            Application.Run(new SMSReceiver());
         }
     }
 }

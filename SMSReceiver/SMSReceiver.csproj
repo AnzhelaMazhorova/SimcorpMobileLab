@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9CAAD269-3217-4626-B6D8-4B0B27BCC07D}</ProjectGuid>
+    <ProjectGuid>{DE968BCE-01F6-4F2F-898A-12E6128FCF59}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp1</RootNamespace>
-    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <RootNamespace>SMSReceiver</RootNamespace>
+    <AssemblyName>SMSReceiver</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,16 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SMSReceiverForm.cs">
+    <Compile Include="SMSReceiver.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SMSReceiverForm.Designer.cs">
-      <DependentUpon>SMSReceiverForm.cs</DependentUpon>
+    <Compile Include="SMSReceiver.Designer.cs">
+      <DependentUpon>SMSReceiver.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="SMSReceiverForm.resx">
-      <DependentUpon>SMSReceiverForm.cs</DependentUpon>
+    <EmbeddedResource Include="SMSReceiver.resx">
+      <DependentUpon>SMSReceiver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,12 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SimcorpMobileComponents\MobilePhoneComponents.csproj">
-      <Project>{69a01672-832c-4bda-84bb-88a84cf8839b}</Project>
-      <Name>MobilePhoneComponents</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
