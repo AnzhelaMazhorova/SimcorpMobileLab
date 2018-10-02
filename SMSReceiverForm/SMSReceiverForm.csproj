@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DE968BCE-01F6-4F2F-898A-12E6128FCF59}</ProjectGuid>
+    <ProjectGuid>{2150D64F-A9F9-41A3-9170-19B2B3BE252F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SMSReceiver</RootNamespace>
-    <AssemblyName>SMSReceiver</AssemblyName>
+    <RootNamespace>SMSReceiverForm</RootNamespace>
+    <AssemblyName>SMSReceiverForm</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,16 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SMSReceiver.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SMSReceiver.Designer.cs">
-      <DependentUpon>SMSReceiver.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="SMSReceiver.resx">
-      <DependentUpon>SMSReceiver.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,6 +77,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimcorpMobileComponents\MobilePhoneComponents.csproj">
+      <Project>{69a01672-832c-4bda-84bb-88a84cf8839b}</Project>
+      <Name>MobilePhoneComponents</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SMSReceiver.Properties {
+namespace SMSReceiverForm.Properties {
 
 
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

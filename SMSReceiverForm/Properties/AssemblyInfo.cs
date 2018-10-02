@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("SMSReceiver")]
+[assembly: AssemblyTitle("SMSReceiverForm")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SMSReceiver")]
+[assembly: AssemblyProduct("SMSReceiverForm")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("de968bce-01f6-4f2f-898a-12e6128fcf59")]
+[assembly: Guid("2150d64f-a9f9-41a3-9170-19b2b3be252f")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
