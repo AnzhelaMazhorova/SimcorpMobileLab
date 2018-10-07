@@ -2,9 +2,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimcorpMobile.Model;
 
-namespace MessageFormattingTest {
+namespace Lab3MessageFormattingTest {
     [TestClass]
-    public class MessageFormattingTest {
+    public class Lab3MessageFormattingTest {
         [TestMethod]
         public void FormatWithTime() {
             //--Arrange

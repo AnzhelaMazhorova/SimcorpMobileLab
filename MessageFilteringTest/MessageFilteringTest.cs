@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MessageFilteringTest {
+namespace Lab4MessageFilteringTest {
     [TestClass]
-    public class MessageFilteringTest {
+    public class Lab4MessageFilteringTest {
         [TestMethod]
         public void FilterMsgsByText() {
             //--Arrange

@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MessagesStorageTest {
+namespace Lab4MessagesStorageTest {
     [TestClass]
-    public class MessagesStorageTest {
+    public class Lab4MessagesStorageTest {
         [TestMethod]
         public void MessageAddedToStorage() {
             //--Arrange

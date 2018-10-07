@@ -3,9 +3,9 @@ using SimcorpMobilePhone.Model;
 using SimcorpMobilePhone.View;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MobilePhoneTest {
+namespace Lab2MobilePhoneTest {
     [TestClass]
-    public class DataOutputTest {
+    public class Lab2DataOutputTest {
         [TestMethod]
         public void DataOutputEmptyData() {
 
