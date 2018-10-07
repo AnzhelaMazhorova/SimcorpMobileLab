@@ -1,15 +1,33 @@
-﻿using System.Text;
+﻿using SimcorpMobile.Model;
+using System.Text;
 
 namespace SimcorpMobilePhone.Model {
     public class MobileSimcorp : Mobile {
 
-        public MobileSimcorp(ScreenBase screen, IBattery battery, Keyboard keyboard, Microphone microphone, ISpeaker speaker, SimCard simCard) {
-            this.Screen = screen;
-            this.Battery = battery;
-            this.Keyboard = keyboard;
-            this.Microphone = microphone;
-            this.Speaker = speaker;
-            this.SimCard = simCard;
+        public MobileSimcorp(ScreenBase screen, IBattery battery, Keyboard keyboard, Microphone microphone, ISpeaker speaker, SimCard simCard,
+            SMSProvider sMSProvider, SMSStorage sMSStorage ) {
+            Screen = screen;
+            Battery = battery;
+            Keyboard = keyboard;
+            Microphone = microphone;
+            Speaker = speaker;
+            SimCard = simCard;
+            SMSProvider = SMSProvider;
+            SMSStorage = SMSStorage;
+        }
+
+        public MobileSimcorp(IBattery battery, Keyboard keyboard, Microphone microphone, SimCard simCard,
+            SMSProvider sMSProvider, SMSStorage sMSStorage) {
+            Battery = battery;
+            Keyboard = keyboard;
+            Microphone = microphone;
+            SimCard = simCard;
+            SMSProvider = SMSProvider;
+            SMSStorage = SMSStorage;
+        }
+
+        public MobileSimcorp() {
+            SMSProvider = new SMSProvider();
         }
 
         public override void AddContact() { }

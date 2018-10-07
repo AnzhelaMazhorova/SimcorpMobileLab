@@ -43,6 +43,8 @@
     <Compile Include="Battery.cs" />
     <Compile Include="IBattery.cs" />
     <Compile Include="Keyboard.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageFormatting.cs" />
     <Compile Include="Microphone.cs" />
     <Compile Include="MTSSimCard.cs" />
     <Compile Include="PhoneMicrophone.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="SimCard.cs" />
     <Compile Include="SimCardType.cs" />
     <Compile Include="SMSProvider.cs" />
+    <Compile Include="SMSStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
