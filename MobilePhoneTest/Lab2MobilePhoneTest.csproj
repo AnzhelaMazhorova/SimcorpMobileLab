@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DataOutputTest.cs" />
+    <Compile Include="Lab2DataOutputTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
